@@ -28,7 +28,7 @@
       banner: '广告'
       site_config: "站点配置"
       page: '网页文档'
-      merchant: '商家'
+      merchant: '账号主体'
       common_config: '系统设置'
       game_config: '游戏配置'
       withdraw: '提现'
@@ -53,15 +53,7 @@
       profile: '用户资料'
       permission_resource: '权限资源'
       permission: '权限点'
-      address: "地址"
-      house_use: "房屋用途"
-      house: "房屋"
-      property_info: "产权人信息"
-      daily_check: "日常检查"
-      person: "居住人员"
-      company: "实有单位"
-      employee: "从业人员"
-      operate_log: "操作日志"
+      
     attributes:
       user:
         uid: 'ID'
@@ -82,152 +74,7 @@
         password_confirmation: "确认密码"
         name: "账号姓名"
         dept: "所属部门"
-      address:
-        addr_id: "地址ID"
-        parent_addr: "上级地址（街路巷）"
-        name: "地址全称"
-        district: "行政区划"
-        police: "管辖派出所"
-        local_psb: "管辖分局"
-        house_id: "房屋"
-      house_use:
-        name: "名称"
-        _type: "类别值"
-        subtype: "子类别值"
-      house:
-        image: "房屋图片"
-        house_use: "房屋用途"
-        _type: "房屋类型"
-        jg_type: "结构类型"
-        plot_name: "小区名称"
-        area: "面积（㎡）"
-        rooms_count: "房间数（个）"
-        mgr_level: "管理等级"
-        mgr_reason: "管理理由"
-        use_type: "使用类型"
-        rent_type: "租用类型"
-        memo: "房屋备注"
-      property_info:
-        _type: "产权类型"
-        house_id: "所属房屋"
-        license_no: "产权证号"
-        comp_name: "单位名称"
-        comp_phone: "单位联系电话"
-        comp_addr: "单位地址"
-        comp_position: "职务"
-        card_type: "房主证件类型"
-        card_no: "证件号码"
-        name: "姓名"
-        sex: "性别"
-        nation: "民族"
-        phone: "联系电话"
-        address: "现居住地址"
-        serv_space: "服务场所"
-        memo: "备注"
-        state: "状态"
-      daily_check:
-        has_man: "是否有居住人员"
-        has_error: "是否有异常情况"
-        memo: "备注"
-        state: "状态"
-        check_on: "检查日期"
-        images: "检查附件"
-        house_id: "所属房屋"
-      person:
-        card_type: "证件类型"
-        card_no: "证件号码"
-        birth: "出生日期"
-        country: "国籍"
-        name: "姓名"
-        sex: "性别"
-        reg_address: "户籍地址"
-        address1: "居住地址1"
-        mgr_level: "管理等级"
-        caiji_type: "采集人类别"
-        caiji_reason: "采集依据"
-        situation: "人员情况"
-        birth_addr: "出生地"
-        native_place: "籍贯"
-        identity: "身份"
-        old_name: "曾用名"
-        nation: "民族"
-        alias_name: "别名绰号"
-        telephone: "联系电话"
-        marry_status: "婚姻状况"
-        gov_type: "政治面貌"
-        religion: "宗教信仰"
-        height: "身高"
-        blood_type: "血型"
-        mili_serve_state: "兵役情况"
-        education: "文化程度"
-        speciality: "专长"
-        job: "职业"
-        strong_point: "人员特长"
-        house_id: "所属房屋"
-        state: "注销状态"
-      employee:
-        card_type: "证件类型"
-        card_no: "证件号码"
-        name: "姓名"
-        sex: "性别"
-        birth: "出生日期"
-        nation: "民族"
-        country: "国籍"
-        native_place: "籍贯"
-        job_type: "职务类别"
-        dept: "所在部门"
-        position: "所在岗位"
-        telephone: "联系电话"
-        communicate_type: "通讯类型"
-        contact_type: "联系方式类别"
-        begin_date: "开始日期"
-        end_date: "结束日期"
-        caiji_type: "采集人类别"
-        caiji_reason: "采集依据"
-        address: "居住地址"
-        memo: "备注信息"
-        company_id: "所属公司"
-      company:
-        house_id: "所属房屋"
-        name: "单位名称"
-        comp_type: "单位分类"
-        comp_xz_type: "单位性质"
-        mgr_level: "管理等级"
-        alias_name: "单位俗称"
-        comp_no1: "组织机构代码"
-        comp_prop_type: "单位属性"
-        phone: "单位联系电话"
-        top_comp_type: "上级单位"
-        scope: "经营范围"
-        comp_no2: "税务登记号"
-        has_video_monitor: "是否有视频监控"
-        comp_no3: "营业执照号"
-        reg_date: "注册日期"
-        reg_money: "注册资本(万)"
-        fz_date: "发照日期"
-        expire_date: "有效期至"
-        reg_address: "注册地址"
-        address: "主地址"
-        state: "状态"
-      operate_log:
-        house_id: "所属房屋"
-        title: "操作内容"
-        action: "操作类型"
-        operateable: "被操作对象"
-        begin_time: "操作开始时间"
-        end_time: "操作结束时间"
-        owner_id: "操作者"
-      profile:
-        name: '姓名'
-        sex: '性别'
-        birth: '生日'
-        phone: '电话'
-        idcard: '身份证'
-        is_student: '是否在读'
-        college: '学校'
-        specialty: '专业'
-        created_at: '创建时间'
-        updated_at: '更新时间'
+        
       permission_resource:
         id: 'ID'
         func_name: '资源中文名'
@@ -246,24 +93,7 @@
         content: '内容'
         link: '消息链接地址'
         to_users: '消息接收人'
-      project:
-        id: '#'
-        uniq_id: '编号'
-        title: '兼职简介'
-        begin_date: '开始日期'
-        end_date: '截止日期'
-        body: '兼职描述'
-        money: '工资金额'
-        opened: '是否打开'
-        sort: '显示顺序'
-        created_at: '创建时间'
-        updated_at: '更新时间'
       
-      banner:
-        image: '封面图'
-        link: '链接地址'
-        sort: '显示顺序'
-        opened: '是否上线'
       message_template:
         tpl_id: '模板ID'
         title: '标题'
@@ -278,52 +108,6 @@
         key: '配置名'
         value: '配置值'
         description: '配置说明'
-      job:
-        uniq_id: 'ID'
-        title: '标题'
-        body: '详细介绍'
-        company: '所属公司'
-        price: '兼职价格'
-        work_start_date: '工作开始日期'
-        work_end_date: '工作结束日期'
-        work_length: '工期'
-        opened: '是否上架'
-        sort: '显示顺序'
-        created_at: '创建时间'
-        updated_at: '更新时间'
-      job_task:
-        content: '任务内容'
-        job_id: '分配兼职'
-        agent_user_id: '所属代理'
-      agent_user:
-        uniq_id: 'ID'
-        name: '代理人名字'
-        mobile: '代理人手机'
-        address: '代理人地址'
-        parent_id: '父级代理人'
-        level: '代理人级别'
-        source: '来源'
-        star: '活跃程度'
-        parent: '上级代理'
-        balance: '余额'
-        earnings: '总收入'
-        earn_ratio: '收入提成比例配置'
-        blocked_at: '禁用时间'
-        note: '备注'
-        created_at: '创建时间'
-        updated_at: '更新时间'
-      agent_config:
-        key: '配置名称'
-        value: '配置值'
-        description: '配置说明'
-      agent_earn_bill:
-        uniq_id: 'ID'
-        agent_user_id: '所属代理商'
-        money: '提成金额'
-        earn_ratio: '提成比例'
-        from_agent_user_id: '下级代理商'
-        uid: '用户ID'
-        created_at: '创建时间'
       attachment:
         data: '文件'
         uniq_id: 'ID'
@@ -369,25 +153,20 @@
         created_at: "创建时间"
         role: "角色"
       merchant:
+        merch_id: "ID"
         name: '名称'
-        mobile: '联系电话'
+        phone: '联系电话'
         address: '地址'
-        note: '备注'
-        avatar: '头像'
+        # note: '备注'
+        logo: 'LOGO'
         intro: '简介'
-        auth_type: '认证方式'
-        verified: '是否有效'
-        password: '密码'
-        password_confirmation: '确认密码'
-        login_in_count: '登录次数'
-      media_history:
-        title: '资源名字'
-        source_url: '资源地址'
-        progress: '进度'
-        uniq_id: 'ID'
-        uid: '用户'
-        mp_id: '提供者'
-        created_at: 'at'
+        _type: '类型'
+        lic_no: "证件号码"
+        lic_images: "证件附件"
+        vip_expired_at: "VIP过期时间"
+        balance: "余额"
+        state: '状态'
+        
       page:
         title: '标题'
         body:  '内容'
@@ -436,16 +215,7 @@
         name: '名称'
         sort: '显示顺序'
         opened: '是否使用'
-      salary:
-        id: 'ID'
-        uniq_id: '流水号'
-        money: '工资金额(元)'
-        pay_name: '支付宝账号姓名'
-        pay_account: '支付宝账号手机'
-        payed_at: '发放时间'
-        created_at: '申请时间'
-        project: '兼职项目'
-        user: '申请人'
+
     errors:
       models:
         user: "用户"
