@@ -19,11 +19,11 @@ index do
   column :vip_expired_at
   column :lic_no
   column :lic_images do |o|
-    html = ''
+    html = []
     o.lic_images.each do |img|
-      html += image_tag(img.url, size: "108x192") + "<br>"
+      html << image_tag(img.url, size: "108x192")
     end
-    raw(html)
+    raw(html.join("<br>"))
   end
   column :intro
   column :address
