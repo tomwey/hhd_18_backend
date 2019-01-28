@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "YBSS后台系统"
+  config.site_title = "HHD18后台系统"
   
   config.namespace :admin do |admin|
     admin.build_menu do |menu|
