@@ -14,6 +14,31 @@ class Merchant < ActiveRecord::Base
     end while self.class.exists?(:merch_id => merch_id)
   end
   
+  # 定义状态机
+  state_machine initial: :pending do # 默认状态，待审核
+    state :approved  # 审核通过，可以使用
+    state :rejected  # 未审核通过
+    
+    # 审核
+    after_transition [:pending, :rejected] => :approved do |merch, transition|
+      # TODO: 记录活动操作日志
+      # merch.do_approve
+    end
+    event :approve do
+      transition [:pending, :rejected] => :approved
+    end
+    
+    # 拒绝通过审核
+    after_transition [:pending, :approved] => :rejected do |event, transition|
+      # TODO: 记录活动操作日志
+      # event.send_message
+    end
+    event :reject do
+      transition [:pending, :approved] => :rejected
+    end
+    
+  end # end state define
+  
   def _balance=(val)
     if val.present?
       val = val.to_f

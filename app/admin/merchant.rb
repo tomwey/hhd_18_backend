@@ -4,6 +4,24 @@ ActiveAdmin.register Merchant do
 #
 permit_params :logo, :name, :lic_no, :_type, :phone, :address, :intro, :_balance, :vip_expired_at, { lic_images: [] }
 
+index do
+  selectable_column
+  column('#', :id)
+  column :merch_id
+  column :logo do |o|
+    image_tag o.logo.url(:large), size: "60x60"
+  end
+  column :name
+  column :phone
+  column :balance do |o|
+    o._balance
+  end
+  column :vip_expired_at
+  column :intro
+  column :address
+  actions
+end
+
 form html: { multipart: true } do |f|
   f.semantic_errors
   f.inputs "基本信息" do
