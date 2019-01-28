@@ -11,7 +11,7 @@ role :app, %w{deployer@small-best.com}
 role :web, %w{deployer@small-best.com}
 role :db,  %w{deployer@small-best.com}
 
-set :server_name, "ybss.afterwind.cn"
+set :server_name, "hhd-18.afterwind.cn"
 # set :port, "80" # 默认都是80端口
 
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
