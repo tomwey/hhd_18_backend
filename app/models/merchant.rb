@@ -43,7 +43,7 @@ class Merchant < ActiveRecord::Base
     if val.present?
       val = val.to_f
       if val >= 0
-        self.balance = val
+        self.balance = (val * 100).to_i
       end
     end
   end
